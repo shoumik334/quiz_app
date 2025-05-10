@@ -1,27 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/start_screen.dart';
 
 void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.purple,
-        body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Image.asset('assets/images/quiz-logo.png',width: 350,height: 500,),
-              SizedBox(height: 30),
-              OutlinedButton(
-                onPressed: () {},
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  side: BorderSide(color: Colors.white),
-                ),
-
-                child: Text('Take Quiz'),
-              ),
-            ],
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [const Color.fromARGB(135, 132, 4, 4), const Color.fromARGB(255, 168, 212, 248)],
+              begin:Alignment.centerLeft,
+              end:Alignment.bottomLeft,
+            ),
           ),
+          child: startScreen(),
         ),
       ),
     ),
