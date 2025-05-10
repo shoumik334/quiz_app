@@ -1,3 +1,10 @@
+# Ignore platform-specific code from stats
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+web/** linguist-vendored
 
 # Treat all Dart files as Dart
 *.dart linguist-language=Dart
