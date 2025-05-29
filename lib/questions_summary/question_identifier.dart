@@ -21,8 +21,8 @@ class QuestionIdentifier extends StatelessWidget {
       decoration: BoxDecoration(
         color:
             isCorrectAnswer
-                ? const Color.fromARGB(255, 231, 0, 0)
-                : const Color.fromARGB(255, 134, 247, 53),
+                ? const Color.fromARGB(124, 34, 233, 20)
+                : const Color.fromARGB(110, 230, 19, 0),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Text(
