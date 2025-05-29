@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
+
 import 'package:quiz_app/questions_summury.dart';
 
 class ResultScreen extends StatelessWidget {
-  const ResultScreen({super.key, required this.chosenAnswer});
+  const ResultScreen({super.key, required this.chosenAnswer,});
   final List<String> chosenAnswer;
+ 
 
   List<Map<String, Object>> getSummuryData() {
     final List<Map<String, Object>> summury = [];
@@ -43,7 +45,7 @@ class ResultScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             QuestionsSummury(summuryData),
-            TextButton(onPressed: () {}, child: Text('Restart Quiz')),
+            TextButton(onPressed: (){}, child: Text('Restart Quiz')),
           ],
         ),
       ),

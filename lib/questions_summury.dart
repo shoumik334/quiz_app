@@ -14,7 +14,7 @@ class QuestionsSummury extends StatelessWidget {
               summuryData.map((data) {
                 return Row(
                   children: [
-                    Text(((data['question_index'] as int) + 1).toString()),
+                    Text(((data['question_index'] as int) + 1).toString(),textAlign:TextAlign.left,),
                     Expanded(
                       child: Column(
                         children: [
