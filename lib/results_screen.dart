@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/data/questions.dart';
 
-import 'package:quiz_app/questions_summury.dart';
+import 'package:quiz_app/questions_summary/questions_summury.dart';
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key, required this.chosenAnswer,});
